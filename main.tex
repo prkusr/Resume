@@ -1,0 +1,257 @@
+%%https://www.overleaf.com/6237582vwdsfv
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 	TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Prasanna Kumar}{Srinivasachar}{ \urlstyle{same}\url{} \\
+\href{mailto:prasanna.310892@gmail.com}{prasanna.310892@gmail.com} | 720.755.7888
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 	COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 	EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{University of Colorado,
+Boulder}
+\descript{Master's in Computer Science}
+\location{May 2018 | Boulder, CO \\ Cum. GPA: 3.94/4.0}
+\sectionsep
+
+\subsection{R.V. College of Engineering}
+\descript{B E in Information Science}
+\location{July 2014 | Bangalore, India}
+\location{ Cum. GPA: 8.72 / 10.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 	LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Link}
+LinkedIn://  \href{https://www.linkedin.com/in/prasanna25169}{\custombold{prasanna25169}} \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 	SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+Java \textbullet{}Python \textbullet{} C \textbullet{} C++ \\
+%\sectionsep
+\subsection{Query Languages}
+MySQL \textbullet{}PostgreSQL \textbullet{} NoSQL\\
+%\sectionsep
+\subsection{Data-Exchange Format}
+JSON \textbullet{} XML \textbullet{} XSD \textbullet{} WSDL \\
+%\sectionsep
+\subsection{FrontEnd Skills}
+HTML5 \textbullet{} CSS3 \textbullet{} JS ES6 \textbullet{} JQuery \textbullet{}
+JSP \textbullet{} Node.js \textbullet{} React.js
+\subsection{IDE }
+IntelliJ \textbullet{} Eclipse \textbullet{} PyCharm \textbullet{} Jupyter Notebook\\
+\subsection{Other }
+Hibernate \textbullet{} MyBatis \textbullet{} DropwizardIO  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 	COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Big Data Architecture\\
+Object Oriented Analysis and Design \\
+Design and Analysis of Algorithms \\
+Network systems \\
+Convex Optimization \\
+Linear Programming \\
+Deep Neural Networks \\
+Machine Learning \\
+
+\sectionsep 
+\subsection{Undergraduate}
+Algorithms \\
+Data Structures with C \\
+Java and J2EE\\
+Operating Systems \\
+Web Programming \\
+Advanced Unix\\
+Database Management Systems\\
+Data Mining\\
+Optimization Techniques\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% 	COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 	Objective
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Objective}
+%\location{To secure an internsip for Summer 2017}
+%%%%
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 	EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{HomeAway.com, Inc.}
+\descript{| Software Developer}
+\location{May 2018 - Present | Austin,TX}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Working in traveler and partner authentication, service to service authorization and user management system
+\item Closely involved in apps cloud migration by rebuilding a scalable and resilient authentication systems encashing on the latest applicable frameworks
+\item Developed runtime spam protection systems , integrated cloud based notification , migrated legacy apps to latest devops systems.
+\item Technologies working on - C* ,Java ,React.js ,Redis ,Jwt ,Dropwizard ,Kafka
+\end{tightemize}
+\sectionsep
+
+\runsubsection{HomeAway.com, Inc.}
+\descript{| Software Developer Intern}
+\location{June 2017 - August 2017 | Austin,TX}
+\begin{tightemize}
+\item Participated in the HomeAway University program for first 2 weeks.
+\item Developed an payment information dashboard to swiftly analyze and resolve the payment records which failed.
+\item Developed using dropwizard,react,mybatis,node and internal homeaway architecture patterns.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Via.com}
+\descript{| Software Developer}
+\location{July 2014 - June 2016 | Bangalore,India}
+\begin{tightemize}
+\item Created full-fledged travel e-commerce site as training in 2 months.
+\item Integrated multiple vendor APIs to delegate the inventory content for hotels.
+\item Developed generic email framework scalable for multiple organisation email.
+\item Introduced pay later feature for the hotels.
+\item Built all the backend endpoints for the revamped UI experience of the site. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Deloitte Consulting LLP}
+\descript{| BTA-Intern }
+\location{February 2014 – June 2014 | Bangalore,India}
+\begin{tightemize}
+\item Worked on a the integration of social media platform to company specific ERP in order to reduce the response time required  for tending to customer queries using MuleSoft  an iPaaS tool.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 	Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Projects}
+\runsubsection{Twitter stream opinion mining}
+\location{January 2018 – May 2018 | Boulder}
+\begin{tightemize}
+\item  Visualization of the aspect-based opinions for a given product in real time as a heat map based on demographics using live twitter stream data.
+\item Developed as part of Big Data Architecture coursework.
+\item Developed using Spark,Kafka ,OpenNLP , Google maps ,Redis ,Java ,React.js
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Melody milieu}
+\location{August 2017 – Dec 2017 | Boulder}
+\begin{tightemize}
+\item Built secure webapp RESTful endpoints based on object oriented principles, to produce song recommendation based on user history.
+\item Developed as part of Object Oriented Analysis and Design Principles course.
+\item Developed utilizing micro services pattern. Used SpringBoot, Java.
+\end{tightemize}
+\sectionsep
+	
+\runsubsection{US-36 Toll optimization}
+\location{August 2016 – Dec 2016 | Boulder}
+\begin{tightemize}
+\item Built using  Python, HTML, JavaScript, jQuery, CSS3, Gurobi.
+\item Developed an utility that would optimize the driving time with toll cost incurred by the users in US 36 highway, with options to fine tune cost and time.
+\end{tightemize}
+\sectionsep
+
+
+\end{minipage}
+\end{document}  \documentclass[]{article}
+
+
+
+
+
+
